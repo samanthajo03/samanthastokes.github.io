@@ -8,9 +8,9 @@ body {
 }
 
 h1 {
-  font-family: 'Merriweather', Georgia, "Times New Roman", serif;
-  size: 30px;
-  color: #c83b81;
+  font-family: 'Roboto', sans-serif;
+  size: 40px;
+  color: #2b82a8;
   font-weight: bold;
   text-align: center;
 }
@@ -25,22 +25,24 @@ h1 {
 
 #nav a:link {
   display: block;
-  color: #ffffff;
-  background-color: #f25848;
+  color: #2b82a8;
+  background-color: white;
   font-weight: bold;
   text-align: center;
-  font-family: 'Merriweather Sans', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   padding: 4px;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 #nav a:hover, #nav a:active {
-  background-color: #c83b81;
+  background-color: white;
   text-decoration: none;
+  color: black;
 }
+
 #nav a:visited {
   text-decoration: none;
-  color: #ffffff;
+  color: #2b82a8;
 }
 
 p {
