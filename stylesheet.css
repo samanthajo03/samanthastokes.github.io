@@ -21,17 +21,21 @@ h1 {
 
 #nav li {
   list-style-type: none;
+  display: inline;
+}
+
+#nav li a {
+
 }
 
 #nav a:link {
-  display: block;
   color: #2b82a8;
   background-color: white;
-  font-weight: bold;
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  padding: 4px;
+  size: 16px;
   text-decoration: none;
+  font-size: 25px;
 }
 
 #nav a:hover, #nav a:active {
