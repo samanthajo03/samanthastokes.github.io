@@ -5,6 +5,8 @@
 
 body {
   background-color: white;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 h1 {
@@ -17,6 +19,11 @@ h1 {
 
 #nav {
   padding: 0;
+  border-bottom-color: grey;
+  border-bottom-style: solid;
+  border-bottom-width: .5px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 #nav li {
@@ -24,8 +31,14 @@ h1 {
   display: inline;
 }
 
-#nav li a {
+.resume {
+  padding-right: 0px;
+  padding-left: 15px;
+}
 
+.work {
+  padding-right:20px;
+  padding-left: 0px;
 }
 
 #nav a:link {
