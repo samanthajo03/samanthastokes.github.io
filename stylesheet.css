@@ -36,37 +36,9 @@ p {
   font-size:18px;
 }
 
-nav {
-  padding: 0;
+nav ul {
   display: flex;
-  flex-direction: column;
-}
-
-nav li {
-  list-style-type: none;
-  color:black;
-}
-
-nav a:link {
-  display: block;
-  color: black;
-  background-color: white;
-  font-weight: bold;
-  text-align: center;
-  font-family: 'Roboto', Helvetica, Arial, sans-serif;
-  font-weight: lighter;
-  padding: 4px;
-  text-decoration: none;
-}
-
-nav a:hover, nav a:active {
-  color:black;
-  text-decoration: none;
-}
-
-nav a:visited {
-  color: black;
-  text-decoration:none;
+  flex-flow: column;
 }
 
 @media screen and (min-width: 600px) {
@@ -88,7 +60,7 @@ nav a:visited {
 
 @media screen and (mind-width:800px) {
 
-  .item1 {
+  .name-logo {
     margin-right:auto;
   }
 
