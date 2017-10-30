@@ -1,76 +1,95 @@
-.container {
-  width: 90%
+#container {
+  width: 75%;
   margin: 0 auto;
 }
 
 body {
-  background-color: white;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-h1 {
-  font-family: 'Roboto', sans-serif;
-  size: 40px;
-  color: #2b82a8;
-  font-weight: bold;
-  text-align: center;
-}
-
-#nav {
-  padding: 0;
-  border-bottom-color: grey;
-  border-bottom-style: solid;
-  border-bottom-width: .5px;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-#nav li {
-  list-style-type: none;
-  display: inline;
-}
-
-.resume {
-  padding-right: 0px;
-  padding-left: 15px;
-}
-
-.work {
-  padding-right:20px;
-  padding-left: 0px;
-}
-
-#nav a:link {
-  color: #2b82a8;
-  background-color: white;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  size: 16px;
-  text-decoration: none;
-  font-size: 25px;
-}
-
-#nav a:hover, #nav a:active {
-  background-color: white;
-  text-decoration: none;
-  color: black;
-}
-
-#nav a:visited {
-  text-decoration: none;
-  color: #2b82a8;
-}
-
-p {
-  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
-  size: 16px;
-  color: black;
-  font-weight:600;
-  text-align: left;
+    background-color:white;
 }
 
 img {
   border: none;
-  display: inline;
+  width: 45%;
+  float:left;
+  max-width: 600px;
+  margin-right:20px;
+}
+
+h1 {
+  font-family: 'Roboto', Georgia, Arial, sans-serif;
+  font-weight:lighter;
+  color:#0cd625;
+  font-size:40px;
+}
+
+h2 {
+  font-family: 'Oswald', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: black;
+  font-size:20px;
+}
+
+p {
+  font-family: 'Oswald', Helvetica, Arial, sans-serif;
+  color: black;
+  font-weight:lighter;
+  font-size:18px;
+}
+
+nav {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+nav li {
+  list-style-type: none;
+  color:black;
+}
+
+nav a:link {
+  display: block;
+  color: black;
+  background-color: white;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  padding: 4px;
+  text-decoration: none;
+}
+
+nav a:hover, nav a:active {
+  color:black;
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: black;
+  text-decoration:none;
+}
+
+@media screen and (min-width: 600px) {
+
+    #container {
+        width: 80%;
+    }
+
+    img {
+      display: block;
+      width: 40%;
+      max-width: 500px;
+      margin-top: 0.5em;
+      float:left;
+      margin-right:20px;
+    }
+
+}
+
+@media screen and (mind-width:800px) {
+
+  .item1 {
+    margin-right:auto;
+  }
+
 }
