@@ -1,20 +1,21 @@
 body {
-background-color: white;
+  background-color: white;
 }
 
 #container {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 
 #logo {
+  border: none;
   width: 100%;
-  margin: 0 auto;
 }
 
 #mug {
   border: none;
-  width: 85%;
+  width: 100%;
+  length: 100%;
 }
 
 h1 {
@@ -33,18 +34,49 @@ p {
   font-family: 'Oswald', Helvetica, Arial, sans-serif;
   font-weight: lighter;
   color: black;
+  text-align: left;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #0cb6d5;
+}
+
+a:hover {
+  text-decoration: none;
+  color:black;
+}
+
+a:visited {
+  color: #0cb6d5;
+  text-decoration:none;
+}
+
+
+#resume {
+  border:none;
+  width: 100%;
+  height: 1000px;
+
+}
+
+nav ul li {
+  display: block;
+}
+
+nav a {
+  color: white;
+  display: block;
+  text-decoration:none;
+  padding:20px 30px;
 }
 
 nav ul {
-  display: flex;
-  flex-flow: column;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  display:none;
 }
 
 nav li a {
-  display: block;
   color: #0cb6d5;
   font-weight: lighter;
   padding: 10px;
@@ -57,27 +89,29 @@ nav li a:hover {
   color: black;
 }
 
-@media screen and (min-width: 600px) {
+.menu-trigger {
+    font-size: 1.75em;
+    width: 2em;
+}
+
+@media screen and (min-width: 700px) {
 
     nav ul {
         flex-flow: row;
-        justify-content: space-between;
+        justify-content: center;
+        margin-bottom: 25px;
     }
 
-    #container {
-      width: 80%;
+    nav ul li {
+      padding: 0 40px;
     }
 
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
 
-    #container {
+    # {
         width: 70%;
-    }
-
-    #logo {
-      width: 100%;
     }
 
     #mug {
@@ -88,47 +122,54 @@ nav li a:hover {
       float: left;
       margin-right: 25px;
     }
-}
+}*
 
-@media screen and (min-width: 800px) {
-    .item1 {
-      margin-right: auto;
-    }
-
-    nav ul li {
-      margin: 5px;
-    }
-}
 
 @media screen and (min-width:1000px) {
-  #container {
+
+  nav ul li {
+    margin: 5px;
+  }
+
+
+  #index1 {
     display: grid;
     grid-template-columns: 200px 1fr 1fr;
     grid-gap: 20px;
     grid-template-areas:
     "a a a"
-    "b b b"
-    "c c d"
+    "b b c"
   }
 
-  #logo {
+
+  nav {
     width: 100%;
     grid-area: a;
   }
 
-  nav {
-    width: 100%;
-    grid-area: b;
-  }
-
   #mug {
     width: 100%;
-    grid-area: c;
+    grid-area: b;
 
   }
 
   p {
-    grid-area: d;
+    grid-area: c;
   }
 
+
 }
+
+@media screen and (min-width: 700px){
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        border-top: none;
+    }
+
+    .menu-trigger {
+        display: none;
+    }
