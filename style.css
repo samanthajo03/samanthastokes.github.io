@@ -165,3 +165,27 @@ nav li a:hover {
     .menu-trigger {
         display: none;
     }
+  }
+
+  .bottom-contact-nav {
+    display: block;
+    overflow: hidden;
+    bottom: 0;
+    width: 100%;
+  }
+
+.bottom-contact-nav ul li {
+  display: inline;
+  padding: 50px;
+}
+
+.bottom-contact-nav ul li a {
+  color: white;
+  display: inline;
+  text-decoration: none;
+}
+
+.bottom-contact-nav img {
+  width: 5%;
+  padding-top:50px;
+}
