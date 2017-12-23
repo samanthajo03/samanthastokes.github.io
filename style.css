@@ -120,7 +120,7 @@ nav li a:hover {
       float: left;
       margin-right: 25px;
     }
-}*
+}
 
 
 @media screen and (min-width:1000px) {
@@ -175,11 +175,12 @@ nav li a:hover {
 
   .bottom-contact-nav {
     display: flex;
+    flex-flow: row;
+    justify-content: center;
     overflow: hidden;
     bottom: 0;
     width: 100%;
     padding-top: 40px;
-    align-items: center;
     padding-bottom: 5px;
   }
 
