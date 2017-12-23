@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: white;
 }
@@ -10,6 +15,7 @@ body {
 #logo {
   border: none;
   width: 100%;
+  padding-top: 30px;
 }
 
 #mug {
@@ -168,24 +174,26 @@ nav li a:hover {
   }
 
   .bottom-contact-nav {
-    display: block;
+    display: flex;
     overflow: hidden;
     bottom: 0;
     width: 100%;
+    padding-top: 40px;
+    align-items: center;
+    padding-bottom: 5px;
   }
 
 .bottom-contact-nav ul li {
   display: inline;
-  padding: 50px;
 }
 
 .bottom-contact-nav ul li a {
   color: white;
-  display: inline;
   text-decoration: none;
+  padding: 15px;
 }
 
 .bottom-contact-nav img {
-  width: 5%;
-  padding-top:50px;
+  width: 10%;
+  padding-bottom: 3px;
 }
