@@ -94,86 +94,50 @@ nav li a:hover {
     width: 2em;
 }
 
-/*@media screen and (min-width: 700px) {
+@media screen and (min-width: 1000px) { /*DESKTOP!*/
 
-    nav ul {
-        flex-flow: row;
-        justify-content: center;
-        margin-bottom: 25px;
-    }
-
-    nav ul li {
-      padding: 0 40px;
-    }
-
-}
-
-@media screen and (min-width: 700px) {
-
-    # {
-        width: 70%;
-    }
-
-    #mug {
-      display: block;
-      width: 66%;
-      margin-top: 0.5em;
-      max-width: 500px;
-      float: left;
-      margin-right: 25px;
-    }
-}
-
-
-@media screen and (min-width:1000px) {
-
-  nav ul li {
-    margin: 5px;
+  #logo {
+    margin-bottom: 10px;
   }
 
+  nav ul {
+    flex-flow: row;
+    justify-content:center;
+    margin-bottom: 25px;
+  }
+  nav ul li {
+    padding: 0 40px;
+  }
+
+  .menu-trigger {
+    display: none;
+  }
+
+  #mug {
+    display: block;
+    width: 66%;
+    max-width: 500px;
+    float: left;
+  }
 
   #index1 {
+    margin-top: .5em;
     display: grid;
     grid-template-columns: 200px 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 25px;
     grid-template-areas:
-    "a a a"
-    "b b c"
-  }
-
-
-  nav {
-    width: 100%;
-    grid-area: a;
+    "a a b"
   }
 
   #mug {
     width: 100%;
+    grid-area: a;
+  }
+
+  #bio {
     grid-area: b;
-
   }
-
-  p {
-    grid-area: c;
-  }
-
-
 }
-
-@media screen and (min-width: 700px){
-
-    nav ul {
-        display: flex;
-    }
-
-    nav ul li {
-        border-top: none;
-    }
-
-    .menu-trigger {
-        display: none;
-    }
-  }*/
 
   .bottom-contact-nav {
     display: flex;
@@ -189,23 +153,23 @@ nav li a:hover {
 .bottom-contact-nav ul {
   display: flex;
   flex-flow: row;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .bottom-contact-nav ul li {
-  display: block;
-  justify-content: center;
+  display:block;
+  text-decoration: none;
 }
 
 .bottom-contact-nav ul li a {
   color: white;
-  text-decoration: none;
   padding: 15px;
 }
 
 .bottom-contact-nav img {
   width: 25%;
   padding-bottom: 3px;
+    margin: 0;
 }
 
 #footer p{
