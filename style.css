@@ -183,4 +183,22 @@ bottom: 0;
   .bottom-nav ul li {
     padding: 0 40px;
   }
-}
+
+  /*flex layout for contact page*/
+    #contact {
+      margin-top: .5em;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+      grid-template-areas:
+      "a b"
+    }
+
+    #mug {
+      width: 100%;
+      grid-area: a;
+    }
+
+    #contact-info {
+      grid-area: b;
+    }
