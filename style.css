@@ -63,24 +63,24 @@ a:visited {
 }
 
 /*NAV BAR*/
-nav ul li {
+#topnav ul li {
   display: block;
 }
 
-nav a {
+#topnav a {
   color: white;
   display: block;
   text-decoration:none;
   padding:20px 30px;
 }
 
-nav ul {
+#topnav ul {
   display: flex;
   flex-flow: row;
   justify-content: center;
 }
 
-nav li a {
+#topnav li a {
   color: #0cb6d5;
   font-weight: lighter;
   padding: 10px;
@@ -88,7 +88,7 @@ nav li a {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
 
-nav li a:hover {
+#topnav li a:hover {
   background-color: white;
   color: black;
 }
@@ -96,6 +96,7 @@ nav li a:hover {
 .menu-trigger {
     font-size: 1.75em;
     width: 2em;
+    display: none;
 }
 
 /*BOTTOM NAV STYLE*/
@@ -126,7 +127,7 @@ text-align: center;
 bottom: 0;
 }
 
-@media screen and (min-width: 750px) { /*DESKTOP AND TABLET*/
+@media screen and (min-width: 600px) { /*DESKTOP AND TABLET*/
 
   #logo {
     margin-bottom: 10px;
@@ -140,10 +141,6 @@ bottom: 0;
   }
   nav ul li {
     padding: 0 40px;
-  }
-
-  .menu-trigger {
-    display: none;
   }
 
   #mug {
@@ -201,4 +198,16 @@ bottom: 0;
 
     #contact-info {
       grid-area: b;
+    }
+  }
+
+
+    @media screen and (max-width: 600px) {
+      #topnav {
+        display: none;
+      }
+      .menu-trigger {
+        float: left;
+        display: block;
+      }
     }

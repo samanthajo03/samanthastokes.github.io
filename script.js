@@ -1,11 +1,11 @@
 $(document).ready(function() {
   $('.menu-trigger').click(function() {
-    $('nav ul').slideToggle(500);
+    $('#topnav').slideToggle(600);
   });
 
   $(window).resize(function() {
-    if ( $(window).width() > 700 ) {
-    $('nav ul').removeAttr('style');
+    if ( $(window).width() > 600 ) {
+    $('#topnav').removeAttr('style');
     }
   });
 });
