@@ -134,12 +134,12 @@ bottom: 0;
   }
 
 /*nav bar*/
-  nav ul {
+  #topnav ul {
     flex-flow: row;
     justify-content:center;
     margin-bottom: 25px;
   }
-  nav ul li {
+  #topnav ul li {
     padding: 0 40px;
   }
 
@@ -205,9 +205,16 @@ bottom: 0;
     @media screen and (max-width: 600px) {
       #topnav {
         display: none;
+        clear:left;
+      }
+      #topnav a{
+        float: none;
+        display: block;
+        text-align: center;
       }
       .menu-trigger {
         float: left;
         display: block;
+        width: 100%;
       }
     }
