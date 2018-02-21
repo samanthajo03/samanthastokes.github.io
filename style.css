@@ -199,6 +199,38 @@ bottom: 0;
     #contact-info {
       grid-area: b;
     }
+
+  /*flex layout for work page*/
+    #clips {
+      margin-left: 40px;
+      margin-right: 40px;
+      margin-top: .5em;
+      display: grid;
+      grid-template-columns: 1fr 5fr;
+      grid-gap: 35px;
+      grid-template-areas:
+      "a b"
+      "c d"
+      "e f"
+    }
+    #features_header {
+      grid-area: a;
+    }
+    #features {
+      grid-area: b;
+    }
+    #news_header {
+      grid-area: c;
+    }
+    #news {
+      grid-area: d;
+    }
+    #music_header {
+      grid-area: e;
+    }
+    #music {
+      grid-area: f;
+    }
   }
 
 
