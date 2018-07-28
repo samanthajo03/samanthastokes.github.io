@@ -200,7 +200,7 @@ bottom: 0;
       grid-area: b;
     }
 
-  /*flex layout for work page*/
+/*flex layout for work page
     #clips {
       margin-left: 40px;
       margin-right: 40px;
@@ -231,7 +231,8 @@ bottom: 0;
     #music {
       grid-area: f;
     }
-  }
+  }*/
+
 
 
     @media screen and (max-width: 600px) {
