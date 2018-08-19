@@ -116,7 +116,7 @@ a:visited {
 }
 
 .bottom-nav img{
-  width: 30px;
+  width: 20px;
   justify-content: center;
 }
 
@@ -125,9 +125,10 @@ a:visited {
 width: 100%;
 text-align: center;
 bottom: 0;
+font-size: 12px;
 }
 
-@media screen and (min-width: 600px) { /*DESKTOP AND TABLET*/
+@media screen and (min-width: 850px) { /*DESKTOP AND TABLET*/
 
   #logo {
     margin-bottom: 10px;
@@ -230,12 +231,12 @@ bottom: 0;
     }
     #music {
       grid-area: f;
-    }
-  }*/
+    }*/
+  }
 
 
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 850px) { /*mobile*/
       #topnav {
         display: none;
         clear:left;
@@ -249,5 +250,27 @@ bottom: 0;
         float: left;
         display: block;
         width: 100%;
+      }
+      #bio {
+        text-align: justify;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      #af_inspo {
+        text-align: justify;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      #command {
+        margin-top: 10px;
+      }
+      #say_hi {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: justify;
+      }
+      .bottom-nav img {
+        padding-left: 10px;
+        padding-right: 10px;
       }
     }
